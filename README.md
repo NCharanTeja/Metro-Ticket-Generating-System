@@ -24,21 +24,41 @@ A ServiceNow application for booking metro tickets online. The passenger fills a
 
 ## Repository contents
 
-| Folder | What is inside |
+All project documents are provided as PDF files in the main folder, along with the two ServiceNow XML exports. Screenshots are kept in a separate folder.
+
+| File / Folder | What is inside |
 |---|---|
-| `1_Ideation_Phase` | Problem statements, empathy map, brainstorming |
-| `2_Requirement_Analysis` | Customer journey map, solution requirements, data flow diagrams and user stories, technology stack |
-| `3_Project_Design` | Problem–solution fit, proposed solution, solution architecture |
-| `4_Project_Planning` | Project planning (sprints) and planning logic |
-| `5_Testing` | Functional and performance testing, performance test templates, user acceptance testing, UAT report |
-| `6_Project_Documentation` | FSD project documentation and the final project report |
-| `7_ServiceNow_Update_Set` | Exported XML of the application – can be imported into any ServiceNow instance |
-| `8_Screenshots` | Screenshots of the build and the working output |
+| `Define_Problem_Statements.pdf` | Customer problem statements |
+| `Empathy_Map_Canvas.pdf` | Empathy map of a daily metro commuter |
+| `Brainstorming_Idea_Generation_Prioritization.pdf` | Brainstorming, idea grouping and prioritisation |
+| `Customer_Journey_Map.pdf` | Customer journey map |
+| `Solution_Requirements.pdf` | Functional and non-functional requirements |
+| `Data_Flow_Diagrams_and_User_Stories.pdf` | Data flow diagram and user stories |
+| `Technology_Stack.pdf` | Technical architecture and technology stack |
+| `Problem_Solution_Fit.pdf` | Problem–solution fit canvas |
+| `Proposed_Solution.pdf` | Proposed solution |
+| `Solution_Architecture.pdf` | Solution architecture |
+| `Project_Planning.pdf` | Sprint planning, burndown chart |
+| `Planning_Logic.pdf` | Planning logic and velocity |
+| `Functional_and_Performance_Testing.pdf` | Functional and performance test cases |
+| `Artificial_Intelligence_Performance_Test.pdf` | AI performance test template |
+| `Machine_Learning_Performance_Test.pdf` | ML performance test template |
+| `Power_BI_Performance_Test.pdf` | Power BI performance test template |
+| `Tableau_Performance_Test.pdf` | Tableau performance test template |
+| `Salesforce_Performance_Test.pdf` | Salesforce performance test template |
+| `User_Acceptance_Testing.pdf` | User acceptance test cases and bug tracking |
+| `UAT_Report.pdf` | UAT execution and report |
+| `FSD_Project_Documentation.pdf` | Project documentation |
+| `Final_Project_Report.pdf` | Final project report |
+| `Metro_Ticket_Generating_System.xml` | Exported update set of the application – can be imported into any ServiceNow instance |
+| `Metro_Station_Details_Data.xml` | The 5 station records |
+| `Screenshots/` | Screenshots of the build and the working output |
 
 ## How to import the application
 
 1. Log in to a ServiceNow instance as admin.
 2. Go to **System Update Sets → Retrieved Update Sets**.
-3. Click **Import Update Set from XML** and choose the file in `7_ServiceNow_Update_Set`.
+3. Click **Import Update Set from XML** and choose `Metro_Ticket_Generating_System.xml`.
 4. Open the retrieved update set → **Preview Update Set** → **Commit Update Set**.
-5. Open `/sp`, search **Book A Metro Ticket** and place a test booking.
+5. Import the station data: open `u_metro_station_details.list`, right-click a column heading → **Import XML**, and choose `Metro_Station_Details_Data.xml`.
+6. Open `/sp`, search **Book A Metro Ticket** and place a test booking.
